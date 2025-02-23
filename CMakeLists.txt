@@ -29,17 +29,18 @@ set(EXECUTABLE_NAME ${PROJECT_NAME})
 
 set(SRC_LIST 
     "${Edit_SOURCE_DIR}/src/main.cpp"
+    "${Edit_SOURCE_DIR}/src/App.hpp"
     "${Edit_SOURCE_DIR}/src/App.cpp")
 
 add_executable(${EXECUTABLE_NAME})
 
 target_sources(${EXECUTABLE_NAME} PRIVATE ${SRC_LIST})
 
+
 find_package(SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3-shared)
+find_package(SDL3_ttf REQUIRED)
 
-set(SDLTTF_VENDORED ON)
-
-add_subdirectory(SDL_ttf EXCLUDE_FROM_ALL)
+# set(SDLTTF_VENDORED ON)
 
 target_link_libraries(${EXECUTABLE_NAME} PUBLIC SDL3_ttf::SDL3_ttf SDL3::SDL3)
 

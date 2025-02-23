@@ -1,5 +1,4 @@
-#include <SDL3/SDL.h>
-#include <SDL3_ttf/SDL_ttf.h>
+#include "App.hpp"
 
 #include <cstdlib>
 #include <exception>
@@ -10,6 +9,8 @@ auto main([[maybe_unused]] const int argc, [[maybe_unused]] const char *argv[]) 
 {
     try
     {
+        Application app{};
+        app.run();
         return EXIT_SUCCESS;
     }
     catch (const std::runtime_error &err)
