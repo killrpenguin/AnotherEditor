@@ -1,0 +1,184 @@
+Reading symbols from ./build/Edit...
++break ~Application() 
+Breakpoint 1 at 0x2d48: file /home/david/Programming/cpp_dev/AnotherEditor/src/App.hpp, line 67.
++run
+Starting program: /home/david/Programming/cpp_dev/AnotherEditor/build/Edit 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+[New Thread 0x7fffea1ff6c0 (LWP 29636)]
+[New Thread 0x7fffe99fe6c0 (LWP 29637)]
+[New Thread 0x7fffe91fd6c0 (LWP 29638)]
+[New Thread 0x7fffe89fc6c0 (LWP 29639)]
+[New Thread 0x7fffdbbff6c0 (LWP 29640)]
+[New Thread 0x7fffdb3fe6c0 (LWP 29641)]
+[New Thread 0x7fffdabfd6c0 (LWP 29642)]
+[New Thread 0x7fffda3fc6c0 (LWP 29643)]
+[New Thread 0x7fffd9bfb6c0 (LWP 29644)]
+[New Thread 0x7fffd93fa6c0 (LWP 29645)]
+[Thread 0x7fffd93fa6c0 (LWP 29645) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 29644) exited]
+[Thread 0x7fffda3fc6c0 (LWP 29643) exited]
+[New Thread 0x7fffda3fc6c0 (LWP 29646)]
+[New Thread 0x7fffd9bfb6c0 (LWP 29647)]
+[New Thread 0x7fffd93fa6c0 (LWP 29648)]
+[New Thread 0x7fffbffff6c0 (LWP 29649)]
+
+Thread 1 "Edit" hit Breakpoint 1, Application::~Application (this=0x7fffffffd7e0) at /home/david/Programming/cpp_dev/AnotherEditor/src/App.hpp:67
+warning: Source file is more recent than executable.
++n
+[Thread 0x7fffd93fa6c0 (LWP 29648) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 29647) exited]
+[Thread 0x7fffda3fc6c0 (LWP 29646) exited]
++n
++n
++n
+[Thread 0x7fffbffff6c0 (LWP 29649) exited]
+[Thread 0x7fffe89fc6c0 (LWP 29639) exited]
+[Thread 0x7fffe91fd6c0 (LWP 29638) exited]
+[Thread 0x7fffdbbff6c0 (LWP 29640) exited]
+[Thread 0x7fffdb3fe6c0 (LWP 29641) exited]
+[Thread 0x7fffdabfd6c0 (LWP 29642) exited]
+[Thread 0x7fffe99fe6c0 (LWP 29637) exited]
+[Thread 0x7fffea1ff6c0 (LWP 29636) exited]
++n
+
+Thread 1 "Edit" received signal SIGSEGV, Segmentation fault.
+0x00007ffff75582d9 in FT_Done_Face () from /usr/lib64/libfreetype.so.6
++break FT_Done_Face
+Breakpoint 2 at 0x7ffff75582b0
++info break
+Num     Type           Disp Enb Address            What
+1       breakpoint     keep y   0x0000555555556d48 in Application::~Application() at /home/david/Programming/cpp_dev/AnotherEditor/src/App.hpp:67
+	breakpoint already hit 1 time
+2       breakpoint     keep y   0x00007ffff75582b0 <FT_Done_Face>
++del 1
++run
+Starting program: /home/david/Programming/cpp_dev/AnotherEditor/build/Edit 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+[New Thread 0x7fffea1ff6c0 (LWP 29756)]
+[New Thread 0x7fffe99fe6c0 (LWP 29757)]
+[New Thread 0x7fffe91fd6c0 (LWP 29758)]
+[New Thread 0x7fffe89fc6c0 (LWP 29759)]
+[New Thread 0x7fffdbbff6c0 (LWP 29760)]
+[New Thread 0x7fffdb3fe6c0 (LWP 29761)]
+[New Thread 0x7fffdabfd6c0 (LWP 29762)]
+[New Thread 0x7fffda3fc6c0 (LWP 29763)]
+[New Thread 0x7fffd9bfb6c0 (LWP 29764)]
+[New Thread 0x7fffd93fa6c0 (LWP 29765)]
+[Thread 0x7fffd93fa6c0 (LWP 29765) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 29764) exited]
+[Thread 0x7fffda3fc6c0 (LWP 29763) exited]
+[New Thread 0x7fffda3fc6c0 (LWP 29766)]
+[New Thread 0x7fffd9bfb6c0 (LWP 29767)]
+[New Thread 0x7fffd93fa6c0 (LWP 29768)]
+[Thread 0x7fffd93fa6c0 (LWP 29768) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 29767) exited]
+[Thread 0x7fffda3fc6c0 (LWP 29766) exited]
+
+Thread 1 "Edit" hit Breakpoint 2, 0x00007ffff75582b0 in FT_Done_Face () from /usr/lib64/libfreetype.so.6
++n
+Single stepping until exit from function FT_Done_Face,
+which has no line number information.
+0x00007ffff755a489 in FT_Done_Library () from /usr/lib64/libfreetype.so.6
++n
+Single stepping until exit from function FT_Done_Library,
+which has no line number information.
+0x00007ffff754cec2 in FT_Done_FreeType () from /usr/lib64/libfreetype.so.6
++n
+Single stepping until exit from function FT_Done_FreeType,
+which has no line number information.
+0x00007ffff7f9a704 in TTF_Quit () from /usr/lib64/libSDL3_ttf.so.0
++n
+Single stepping until exit from function TTF_Quit,
+which has no line number information.
+0x00007ffff7f85c00 in SDL_SetInitialized@plt () from /usr/lib64/libSDL3_ttf.so.0
++n
+Single stepping until exit from function SDL_SetInitialized@plt,
+which has no line number information.
+0x00007ffff7c4b400 in SDL_SetInitialized () from /usr/lib64/libSDL3.so.0
++n
+Single stepping until exit from function SDL_SetInitialized,
+which has no line number information.
+0x00007ffff7cc59b0 in ?? () from /usr/lib64/libSDL3.so.0
++n
+Cannot find bounds of current function
++n
+Cannot find bounds of current function
++n
+Cannot find bounds of current function
++reset
+Undefined command: "reset".  Try "help".
++restart
+Requires argument (checkpoint id to restart)
++exit
+Reading symbols from ./build/Edit...
++run
+Starting program: /home/david/Programming/cpp_dev/AnotherEditor/build/Edit 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+[New Thread 0x7fffea1ff6c0 (LWP 29803)]
+[New Thread 0x7fffe99fe6c0 (LWP 29804)]
+[New Thread 0x7fffe91fd6c0 (LWP 29805)]
+[New Thread 0x7fffe89fc6c0 (LWP 29806)]
+[New Thread 0x7fffdbbff6c0 (LWP 29807)]
+[New Thread 0x7fffdb3fe6c0 (LWP 29808)]
+[New Thread 0x7fffdabfd6c0 (LWP 29809)]
+[New Thread 0x7fffda3fc6c0 (LWP 29810)]
+[New Thread 0x7fffd9bfb6c0 (LWP 29811)]
+[New Thread 0x7fffd93fa6c0 (LWP 29812)]
+[Thread 0x7fffd93fa6c0 (LWP 29812) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 29811) exited]
+[Thread 0x7fffda3fc6c0 (LWP 29810) exited]
+[New Thread 0x7fffda3fc6c0 (LWP 29813)]
+[New Thread 0x7fffd9bfb6c0 (LWP 29814)]
+[New Thread 0x7fffd93fa6c0 (LWP 29815)]
+[Thread 0x7fffd93fa6c0 (LWP 29815) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 29814) exited]
+[Thread 0x7fffda3fc6c0 (LWP 29813) exited]
+[Thread 0x7fffe89fc6c0 (LWP 29806) exited]
+[Thread 0x7fffe91fd6c0 (LWP 29805) exited]
+[Thread 0x7fffdbbff6c0 (LWP 29807) exited]
+[Thread 0x7fffdb3fe6c0 (LWP 29808) exited]
+[Thread 0x7fffdabfd6c0 (LWP 29809) exited]
+[Thread 0x7fffe99fe6c0 (LWP 29804) exited]
+[Thread 0x7fffea1ff6c0 (LWP 29803) exited]
+
+Thread 1 "Edit" received signal SIGSEGV, Segmentation fault.
+0x00007ffff75582d9 in FT_Done_Face () from /usr/lib64/libfreetype.so.6
++exit
+Reading symbols from ./build/Edit...
++run
+Starting program: /home/david/Programming/cpp_dev/AnotherEditor/build/Edit 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+[New Thread 0x7fffea1ff6c0 (LWP 29889)]
+[New Thread 0x7fffe99fe6c0 (LWP 29890)]
+[New Thread 0x7fffe91fd6c0 (LWP 29891)]
+[New Thread 0x7fffe89fc6c0 (LWP 29892)]
+[New Thread 0x7fffdbbff6c0 (LWP 29893)]
+[New Thread 0x7fffdb3fe6c0 (LWP 29894)]
+[New Thread 0x7fffdabfd6c0 (LWP 29895)]
+[New Thread 0x7fffda3fc6c0 (LWP 29896)]
+[New Thread 0x7fffd9bfb6c0 (LWP 29897)]
+[New Thread 0x7fffd93fa6c0 (LWP 29898)]
+[Thread 0x7fffd93fa6c0 (LWP 29898) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 29897) exited]
+[Thread 0x7fffda3fc6c0 (LWP 29896) exited]
+[New Thread 0x7fffda3fc6c0 (LWP 29899)]
+[New Thread 0x7fffd9bfb6c0 (LWP 29900)]
+[New Thread 0x7fffd93fa6c0 (LWP 29901)]
+[Thread 0x7fffd93fa6c0 (LWP 29901) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 29900) exited]
+[Thread 0x7fffda3fc6c0 (LWP 29899) exited]
+[Thread 0x7fffe89fc6c0 (LWP 29892) exited]
+[Thread 0x7fffe91fd6c0 (LWP 29891) exited]
+[Thread 0x7fffdbbff6c0 (LWP 29893) exited]
+[Thread 0x7fffdb3fe6c0 (LWP 29894) exited]
+[Thread 0x7fffdabfd6c0 (LWP 29895) exited]
+[Thread 0x7fffe99fe6c0 (LWP 29890) exited]
+[Thread 0x7fffea1ff6c0 (LWP 29889) exited]
+[Inferior 1 (process 29883) exited normally]
++exit
+Reading symbols from ./build/Edit...
++exit

@@ -2,48 +2,85 @@
 
 #include <SDL3/SDL.h>
 #include <SDL3/SDL_init.h>
-#include <SDL3/SDL_oldnames.h>
+#include <SDL3/SDL_keycode.h>
+#include <SDL3/SDL_render.h>
 #include <SDL3_ttf/SDL_ttf.h>
-#include <memory>
 #include <string>
+#include <unordered_map>
 #include <vector>
 
+template <typename T> using Vec = std::vector<T>;
+
+class FontAtlas
+{
+    template <typename K, typename V> using Map = std::unordered_map<K, V>;
+
+  protected:
+    TTF_Font *font{};
+    std::string font_loc{};
+
+    int total_width{0};
+    int max_height{0};
+
+  public:
+    friend class Application;
+
+    SDL_Surface *atlas_surface{};
+    SDL_Texture *atlas_texture{};
+
+    SDL_FRect texture_atlas_info{};
+
+    Map<SDL_Keycode, SDL_FRect> glyph_data{};
+    explicit FontAtlas(std::string &&font_loc);
+    ~FontAtlas()
+    {
+        SDL_DestroySurface(atlas_surface);
+        SDL_DestroyTexture(atlas_texture);
+        TTF_CloseFont(font);
+        TTF_Quit();
+    }
+    constexpr auto operator[](const SDL_Keycode key) const noexcept -> const SDL_FRect &;
+    constexpr auto operator[](const SDL_Keycode key) noexcept -> SDL_FRect &;
+
+    auto init(SDL_Renderer *renderer) -> void;
+};
+/////////////////////////////////////////////////////////////////////////////////
+// Application
+/////////////////////////////////////////////////////////////////////////////////
 class Application
 {
-    template <typename T> using Vec = std::vector<T>;
 
   private:
     bool running{true};
-    const std::string text{"Hello World!"};
 
     SDL_Window *window{};
     SDL_Renderer *renderer{};
-    TTF_Font *font{};
-    Vec<SDL_Surface *> surfaces{};
-    SDL_Texture *finished_texture{};
-    SDL_FRect rectangle{};
 
-    constexpr auto static is_digit(const SDL_Event &event) noexcept -> bool;
-    constexpr auto static is_letter(const SDL_Event &event) noexcept -> bool;
-    constexpr auto static is_ascii(const SDL_Event &event) noexcept -> bool;
-    constexpr auto static quit(const SDL_Event &event) noexcept -> bool;
+    FontAtlas font_atlas{"resources/Inter-VariableFont.ttf"};
 
-    auto clear_screen() const noexcept -> void;
+    SDL_Surface *doc_surface{};
+    SDL_Texture *doc_texture{};
+
+    SDL_FRect current_pos{};
+
+    constexpr auto static is_ascii(const SDL_Keycode key) noexcept -> bool;
+    constexpr auto static quit(const SDL_Event event) noexcept -> bool;
+
+    auto parse_key(const SDL_Keycode key) noexcept -> void;
 
   public:
-    explicit Application() = default;
+    explicit Application() noexcept = default;
     ~Application()
     {
-        SDL_DestroyTexture(finished_texture);
-        TTF_CloseFont(font);
+        SDL_DestroySurface(doc_surface);
+        SDL_DestroyTexture(doc_texture);
         SDL_DestroyRenderer(renderer);
         SDL_DestroyWindow(window);
 
-        TTF_Quit();
         SDL_Quit();
     }
     auto init() -> void;
-    auto render() -> void;
-    auto draw() const noexcept -> void;
+    auto draw() -> void;
+    auto draw_ascii_key(const SDL_Keycode key) const noexcept -> void;
     auto run() -> void;
 };

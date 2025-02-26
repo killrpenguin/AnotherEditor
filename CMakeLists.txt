@@ -40,7 +40,7 @@ target_sources(${EXECUTABLE_NAME} PRIVATE ${SRC_LIST})
 find_package(SDL3 REQUIRED CONFIG REQUIRED COMPONENTS SDL3-shared)
 find_package(SDL3_ttf REQUIRED)
 
-# set(SDLTTF_VENDORED ON)
+set(SDLTTF_VENDORED ON)
 
 target_link_libraries(${EXECUTABLE_NAME} PUBLIC SDL3_ttf::SDL3_ttf SDL3::SDL3)
 
