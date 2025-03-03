@@ -1,6 +1,7 @@
 // clang-format off
 #define CATCH_CONFIG_MAIN
 #include <catch2/catch_test_macros.hpp>
+// #include "App.hpp"
 
 // NOLINTBEGIN(cppcoreguidelines-avoid-magic-numbers, readability-magic-numbers)
 

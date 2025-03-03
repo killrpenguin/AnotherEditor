@@ -10,13 +10,14 @@
 #include <vector>
 
 template <typename T> using Vec = std::vector<T>;
-
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wc++20-designator"
 class FontAtlas
 {
-    template <typename K, typename V> using Map = std::unordered_map<K, V>;
+    template <typename K, typename V> using GlyphMap = std::unordered_map<K, V>;
 
   protected:
-    TTF_Font *font{};
+    TTF_Font *font{nullptr};
     std::string font_loc{};
 
     int total_width{0};
@@ -25,12 +26,13 @@ class FontAtlas
   public:
     friend class Application;
 
-    SDL_Surface *atlas_surface{};
-    SDL_Texture *atlas_texture{};
+    SDL_Surface *atlas_surface{nullptr};
+    SDL_Texture *atlas_texture{nullptr};
 
     SDL_FRect texture_atlas_info{};
 
-    Map<SDL_Keycode, SDL_FRect> glyph_data{};
+    GlyphMap<SDL_Keycode, SDL_FRect> glyph_data{};
+
     explicit FontAtlas(std::string &&font_loc);
     ~FontAtlas()
     {
@@ -52,35 +54,36 @@ class Application
 
   private:
     bool running{true};
+    float line_height{};
 
     SDL_Window *window{};
     SDL_Renderer *renderer{};
 
     FontAtlas font_atlas{"resources/Inter-VariableFont.ttf"};
-
-    SDL_Surface *doc_surface{};
     SDL_Texture *doc_texture{};
-
     SDL_FRect current_pos{};
 
     constexpr auto static is_ascii(const SDL_Keycode key) noexcept -> bool;
     constexpr auto static quit(const SDL_Event event) noexcept -> bool;
 
+    constexpr auto set_line_height() noexcept -> void;
+
     auto parse_key(const SDL_Keycode key) noexcept -> void;
+    auto save_image(const std::string &&file_name, SDL_Texture *texture) const noexcept -> void;
 
   public:
     explicit Application() noexcept = default;
     ~Application()
     {
-        SDL_DestroySurface(doc_surface);
         SDL_DestroyTexture(doc_texture);
         SDL_DestroyRenderer(renderer);
         SDL_DestroyWindow(window);
 
         SDL_Quit();
     }
-    auto init() -> void;
     auto draw() -> void;
-    auto draw_ascii_key(const SDL_Keycode key) const noexcept -> void;
+    auto render_ascii_key(const SDL_Keycode key) noexcept -> void;
+
+    auto init() -> void;
     auto run() -> void;
 };

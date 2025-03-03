@@ -182,3 +182,2736 @@ Using host libthread_db library "/usr/lib64/libthread_db.so.1".
 +exit
 Reading symbols from ./build/Edit...
 +exit
+Reading symbols from ./build/Edit...
++break SDL_PollEvent
+Breakpoint 1 at 0x2730
++run
+Starting program: /home/david/Programming/cpp_dev/AnotherEditor/build/Edit 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+[New Thread 0x7fffea1ff6c0 (LWP 51326)]
+[New Thread 0x7fffe99fe6c0 (LWP 51327)]
+[New Thread 0x7fffe91fd6c0 (LWP 51328)]
+[New Thread 0x7fffe89fc6c0 (LWP 51329)]
+[New Thread 0x7fffdbbff6c0 (LWP 51330)]
+[New Thread 0x7fffdb3fe6c0 (LWP 51331)]
+[New Thread 0x7fffdabfd6c0 (LWP 51332)]
+[New Thread 0x7fffda3fc6c0 (LWP 51333)]
+[New Thread 0x7fffd9bfb6c0 (LWP 51334)]
+[New Thread 0x7fffd93fa6c0 (LWP 51335)]
+[Thread 0x7fffd93fa6c0 (LWP 51335) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 51334) exited]
+[Thread 0x7fffda3fc6c0 (LWP 51333) exited]
+[New Thread 0x7fffda3fc6c0 (LWP 51336)]
+[New Thread 0x7fffd9bfb6c0 (LWP 51337)]
+[New Thread 0x7fffd93fa6c0 (LWP 51338)]
+
+Thread 1 "Edit" hit Breakpoint 1, 0x00007ffff7c4aae0 in SDL_PollEvent () from /usr/lib64/libSDL3.so.0
++print *this
+No symbol "this" in current context.
++print *app
+No symbol "app" in current context.
++print arc
+No symbol "arc" in current context.
++print arc
+No symbol "arc" in current context.
++print argc
+No symbol "argc" in current context.
++exit
+Reading symbols from ./build/Edit...
++exit
+Reading symbols from ./build/Edit...
++exit
+Reading symbols from ./build/Edit...
++break draw_ascii_key
+Breakpoint 1 at 0x3c4b: file /home/david/Programming/cpp_dev/AnotherEditor/src/App.cpp, line 74.
++run
+Starting program: /home/david/Programming/cpp_dev/AnotherEditor/build/Edit 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+[New Thread 0x7fffea1ff6c0 (LWP 51742)]
+[New Thread 0x7fffe99fe6c0 (LWP 51743)]
+[New Thread 0x7fffe91fd6c0 (LWP 51744)]
+[New Thread 0x7fffe89fc6c0 (LWP 51745)]
+[New Thread 0x7fffdbbff6c0 (LWP 51746)]
+[New Thread 0x7fffdb3fe6c0 (LWP 51747)]
+[New Thread 0x7fffdabfd6c0 (LWP 51748)]
+[New Thread 0x7fffda3fc6c0 (LWP 51749)]
+[New Thread 0x7fffd9bfb6c0 (LWP 51750)]
+[New Thread 0x7fffd93fa6c0 (LWP 51751)]
+[Thread 0x7fffd93fa6c0 (LWP 51751) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 51750) exited]
+[Thread 0x7fffda3fc6c0 (LWP 51749) exited]
+[New Thread 0x7fffda3fc6c0 (LWP 51752)]
+[New Thread 0x7fffd9bfb6c0 (LWP 51753)]
+[New Thread 0x7fffd93fa6c0 (LWP 51754)]
+
+Thread 1 "Edit" hit Breakpoint 1, Application::draw_ascii_key (this=0x7fffffffd7a0, key=100) at /home/david/Programming/cpp_dev/AnotherEditor/src/App.cpp:74
++print *this
+$1 = {
+  running = true,
+  window = 0x5555555c0020,
+  renderer = 0x5555555c5d30,
+  font_atlas = {
+    font = 0x55555645db30,
+    font_loc = Python Exception <class 'gdb.error'>: There is no member named _M_p.
+,
+    total_width = 923,
+    max_height = 15,
+    atlas_surface = 0x555556719120,
+    atlas_texture = 0x5555566f49d0,
+    texture_atlas_info = {
+      x = 5,
+      y = 50,
+      w = 923,
+      h = 15
+    },
+    glyph_data = std::unordered_map with 95 elements = {
+      [126] = {
+        x = 912,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [125] = {
+        x = 905,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [124] = {
+        x = 898,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [123] = {
+        x = 891,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [122] = {
+        x = 881,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [121] = {
+        x = 871,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [120] = {
+        x = 862,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [119] = {
+        x = 849,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [118] = {
+        x = 839,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [117] = {
+        x = 829,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [116] = {
+        x = 822,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [115] = {
+        x = 813,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [114] = {
+        x = 805,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [113] = {
+        x = 795,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [112] = {
+        x = 785,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [111] = {
+        x = 775,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [110] = {
+        x = 765,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [109] = {
+        x = 752,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [108] = {
+        x = 746,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [107] = {
+        x = 736,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [106] = {
+        x = 729,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [105] = {
+        x = 723,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [104] = {
+        x = 713,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [103] = {
+        x = 703,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [102] = {
+        x = 695,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [101] = {
+        x = 685,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [100] = {
+        x = 675,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [99] = {
+        x = 665,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [98] = {
+        x = 655,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [97] = {
+        x = 645,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [96] = {
+        x = 636,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [95] = {
+        x = 626,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [94] = {
+        x = 617,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [93] = {
+        x = 610,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [92] = {
+        x = 603,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [91] = {
+        x = 596,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [90] = {
+        x = 585,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [89] = {
+        x = 574,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [88] = {
+        x = 563,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [87] = {
+        x = 548,
+        y = 0,
+        w = 12,
+        h = 15
+      },
+      [86] = {
+        x = 537,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [85] = {
+        x = 525,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [84] = {
+        x = 514,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [83] = {
+        x = 503,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [82] = {
+        x = 492,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [81] = {
+        x = 480,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [80] = {
+        x = 469,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [79] = {
+        x = 457,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [78] = {
+        x = 445,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [77] = {
+        x = 431,
+        y = 0,
+        w = 11,
+        h = 15
+      },
+      [76] = {
+        x = 421,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [75] = {
+        x = 410,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [74] = {
+        x = 400,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [73] = {
+        x = 394,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [72] = {
+        x = 382,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [71] = {
+        x = 370,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [70] = {
+        x = 360,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [69] = {
+        x = 350,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [68] = {
+        x = 338,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [67] = {
+        x = 326,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [66] = {
+        x = 315,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [65] = {
+        x = 304,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [64] = {
+        x = 290,
+        y = 0,
+        w = 11,
+        h = 15
+      },
+      [63] = {
+        x = 281,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [62] = {
+        x = 270,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [61] = {
+        x = 259,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [60] = {
+        x = 248,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [59] = {
+        x = 242,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [58] = {
+        x = 236,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [57] = {
+        x = 226,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [56] = {
+        x = 216,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [55] = {
+        x = 206,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [54] = {
+        x = 196,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [53] = {
+        x = 186,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [52] = {
+        x = 175,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [51] = {
+        x = 164,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [50] = {
+        x = 154,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [49] = {
+        x = 145,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [48] = {
+        x = 134,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [47] = {
+        x = 127,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [46] = {
+        x = 121,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [45] = {
+        x = 112,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [44] = {
+        x = 106,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [43] = {
+        x = 95,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [42] = {
+        x = 86,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [41] = {
+        x = 79,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [40] = {
+        x = 72,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [39] = {
+        x = 66,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [38] = {
+        x = 55,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [37] = {
+        x = 42,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [36] = {
+        x = 31,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [35] = {
+        x = 20,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [34] = {
+        x = 12,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [33] = {
+        x = 6,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [32] = {
+        x = 0,
+        y = 0,
+        w = 3,
+        h = 15
+      }
+    }
+  },
+  doc_surface = 0x5555563094c0,
+  doc_texture = 0x555556309780,
+  current_pos = {
+    x = 0,
+    y = 0,
+    w = 0,
+    h = 0
+  }
+}
++print *this
+$2 = {
+  running = true,
+  window = 0x5555555c0020,
+  renderer = 0x5555555c5d30,
+  font_atlas = {
+    font = 0x55555645db30,
+    font_loc = Python Exception <class 'gdb.error'>: There is no member named _M_p.
+,
+    total_width = 923,
+    max_height = 15,
+    atlas_surface = 0x555556719120,
+    atlas_texture = 0x5555566f49d0,
+    texture_atlas_info = {
+      x = 5,
+      y = 50,
+      w = 923,
+      h = 15
+    },
+    glyph_data = std::unordered_map with 95 elements = {
+      [126] = {
+        x = 912,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [125] = {
+        x = 905,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [124] = {
+        x = 898,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [123] = {
+        x = 891,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [122] = {
+        x = 881,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [121] = {
+        x = 871,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [120] = {
+        x = 862,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [119] = {
+        x = 849,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [118] = {
+        x = 839,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [117] = {
+        x = 829,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [116] = {
+        x = 822,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [115] = {
+        x = 813,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [114] = {
+        x = 805,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [113] = {
+        x = 795,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [112] = {
+        x = 785,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [111] = {
+        x = 775,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [110] = {
+        x = 765,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [109] = {
+        x = 752,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [108] = {
+        x = 746,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [107] = {
+        x = 736,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [106] = {
+        x = 729,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [105] = {
+        x = 723,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [104] = {
+        x = 713,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [103] = {
+        x = 703,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [102] = {
+        x = 695,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [101] = {
+        x = 685,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [100] = {
+        x = 675,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [99] = {
+        x = 665,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [98] = {
+        x = 655,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [97] = {
+        x = 645,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [96] = {
+        x = 636,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [95] = {
+        x = 626,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [94] = {
+        x = 617,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [93] = {
+        x = 610,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [92] = {
+        x = 603,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [91] = {
+        x = 596,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [90] = {
+        x = 585,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [89] = {
+        x = 574,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [88] = {
+        x = 563,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [87] = {
+        x = 548,
+        y = 0,
+        w = 12,
+        h = 15
+      },
+      [86] = {
+        x = 537,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [85] = {
+        x = 525,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [84] = {
+        x = 514,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [83] = {
+        x = 503,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [82] = {
+        x = 492,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [81] = {
+        x = 480,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [80] = {
+        x = 469,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [79] = {
+        x = 457,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [78] = {
+        x = 445,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [77] = {
+        x = 431,
+        y = 0,
+        w = 11,
+        h = 15
+      },
+      [76] = {
+        x = 421,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [75] = {
+        x = 410,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [74] = {
+        x = 400,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [73] = {
+        x = 394,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [72] = {
+        x = 382,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [71] = {
+        x = 370,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [70] = {
+        x = 360,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [69] = {
+        x = 350,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [68] = {
+        x = 338,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [67] = {
+        x = 326,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [66] = {
+        x = 315,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [65] = {
+        x = 304,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [64] = {
+        x = 290,
+        y = 0,
+        w = 11,
+        h = 15
+      },
+      [63] = {
+        x = 281,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [62] = {
+        x = 270,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [61] = {
+        x = 259,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [60] = {
+        x = 248,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [59] = {
+        x = 242,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [58] = {
+        x = 236,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [57] = {
+        x = 226,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [56] = {
+        x = 216,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [55] = {
+        x = 206,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [54] = {
+        x = 196,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [53] = {
+        x = 186,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [52] = {
+        x = 175,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [51] = {
+        x = 164,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [50] = {
+        x = 154,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [49] = {
+        x = 145,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [48] = {
+        x = 134,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [47] = {
+        x = 127,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [46] = {
+        x = 121,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [45] = {
+        x = 112,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [44] = {
+        x = 106,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [43] = {
+        x = 95,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [42] = {
+        x = 86,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [41] = {
+        x = 79,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [40] = {
+        x = 72,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [39] = {
+        x = 66,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [38] = {
+        x = 55,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [37] = {
+        x = 42,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [36] = {
+        x = 31,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [35] = {
+        x = 20,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [34] = {
+        x = 12,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [33] = {
+        x = 6,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [32] = {
+        x = 0,
+        y = 0,
+        w = 3,
+        h = 15
+      }
+    }
+  },
+  doc_surface = 0x5555563094c0,
+  doc_texture = 0x555556309780,
+  current_pos = {
+    x = 0,
+    y = 0,
+    w = 0,
+    h = 0
+  }
+}
++exit
+Reading symbols from ./build/Edit...
++break draw_ascii_key
+Breakpoint 1 at 0x3c4b: file /home/david/Programming/cpp_dev/AnotherEditor/src/App.cpp, line 74.
++run
+Starting program: /home/david/Programming/cpp_dev/AnotherEditor/build/Edit 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+[New Thread 0x7fffea1ff6c0 (LWP 53226)]
+[New Thread 0x7fffe99fe6c0 (LWP 53227)]
+[New Thread 0x7fffe91fd6c0 (LWP 53228)]
+[New Thread 0x7fffe89fc6c0 (LWP 53229)]
+[New Thread 0x7fffdbbff6c0 (LWP 53230)]
+[New Thread 0x7fffdb3fe6c0 (LWP 53231)]
+[New Thread 0x7fffdabfd6c0 (LWP 53232)]
+[New Thread 0x7fffda3fc6c0 (LWP 53233)]
+[New Thread 0x7fffd9bfb6c0 (LWP 53234)]
+[New Thread 0x7fffd93fa6c0 (LWP 53235)]
+[Thread 0x7fffd93fa6c0 (LWP 53235) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 53234) exited]
+[Thread 0x7fffda3fc6c0 (LWP 53233) exited]
+[New Thread 0x7fffda3fc6c0 (LWP 53236)]
+[New Thread 0x7fffd9bfb6c0 (LWP 53237)]
+[New Thread 0x7fffd93fa6c0 (LWP 53238)]
+
+Thread 1 "Edit" hit Breakpoint 1, Application::draw_ascii_key (this=0x7fffffffd7a0, key=100) at /home/david/Programming/cpp_dev/AnotherEditor/src/App.cpp:74
+warning: Source file is more recent than executable.
++n
++n
++print *this
+$1 = {
+  running = true,
+  window = 0x5555555c0020,
+  renderer = 0x5555555c5d30,
+  font_atlas = {
+    font = 0x55555645cd50,
+    font_loc = Python Exception <class 'gdb.error'>: There is no member named _M_p.
+,
+    total_width = 923,
+    max_height = 15,
+    atlas_surface = 0x5555567184d0,
+    atlas_texture = 0x5555566f3ad0,
+    texture_atlas_info = {
+      x = 5,
+      y = 50,
+      w = 923,
+      h = 15
+    },
+    glyph_data = std::unordered_map with 95 elements = {
+      [126] = {
+        x = 912,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [125] = {
+        x = 905,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [124] = {
+        x = 898,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [123] = {
+        x = 891,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [122] = {
+        x = 881,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [121] = {
+        x = 871,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [120] = {
+        x = 862,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [119] = {
+        x = 849,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [118] = {
+        x = 839,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [117] = {
+        x = 829,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [116] = {
+        x = 822,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [115] = {
+        x = 813,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [114] = {
+        x = 805,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [113] = {
+        x = 795,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [112] = {
+        x = 785,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [111] = {
+        x = 775,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [110] = {
+        x = 765,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [109] = {
+        x = 752,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [108] = {
+        x = 746,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [107] = {
+        x = 736,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [106] = {
+        x = 729,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [105] = {
+        x = 723,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [104] = {
+        x = 713,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [103] = {
+        x = 703,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [102] = {
+        x = 695,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [101] = {
+        x = 685,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [100] = {
+        x = 675,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [99] = {
+        x = 665,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [98] = {
+        x = 655,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [97] = {
+        x = 645,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [96] = {
+        x = 636,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [95] = {
+        x = 626,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [94] = {
+        x = 617,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [93] = {
+        x = 610,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [92] = {
+        x = 603,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [91] = {
+        x = 596,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [90] = {
+        x = 585,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [89] = {
+        x = 574,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [88] = {
+        x = 563,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [87] = {
+        x = 548,
+        y = 0,
+        w = 12,
+        h = 15
+      },
+      [86] = {
+        x = 537,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [85] = {
+        x = 525,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [84] = {
+        x = 514,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [83] = {
+        x = 503,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [82] = {
+        x = 492,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [81] = {
+        x = 480,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [80] = {
+        x = 469,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [79] = {
+        x = 457,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [78] = {
+        x = 445,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [77] = {
+        x = 431,
+        y = 0,
+        w = 11,
+        h = 15
+      },
+      [76] = {
+        x = 421,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [75] = {
+        x = 410,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [74] = {
+        x = 400,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [73] = {
+        x = 394,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [72] = {
+        x = 382,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [71] = {
+        x = 370,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [70] = {
+        x = 360,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [69] = {
+        x = 350,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [68] = {
+        x = 338,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [67] = {
+        x = 326,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [66] = {
+        x = 315,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [65] = {
+        x = 304,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [64] = {
+        x = 290,
+        y = 0,
+        w = 11,
+        h = 15
+      },
+      [63] = {
+        x = 281,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [62] = {
+        x = 270,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [61] = {
+        x = 259,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [60] = {
+        x = 248,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [59] = {
+        x = 242,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [58] = {
+        x = 236,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [57] = {
+        x = 226,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [56] = {
+        x = 216,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [55] = {
+        x = 206,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [54] = {
+        x = 196,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [53] = {
+        x = 186,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [52] = {
+        x = 175,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [51] = {
+        x = 164,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [50] = {
+        x = 154,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [49] = {
+        x = 145,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [48] = {
+        x = 134,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [47] = {
+        x = 127,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [46] = {
+        x = 121,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [45] = {
+        x = 112,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [44] = {
+        x = 106,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [43] = {
+        x = 95,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [42] = {
+        x = 86,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [41] = {
+        x = 79,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [40] = {
+        x = 72,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [39] = {
+        x = 66,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [38] = {
+        x = 55,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [37] = {
+        x = 42,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [36] = {
+        x = 31,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [35] = {
+        x = 20,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [34] = {
+        x = 12,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [33] = {
+        x = 6,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [32] = {
+        x = 0,
+        y = 0,
+        w = 3,
+        h = 15
+      }
+    }
+  },
+  doc_surface = 0x555556308900,
+  doc_texture = 0x555556308c50,
+  current_pos = {
+    x = 0,
+    y = 0,
+    w = 0,
+    h = 0
+  }
+}
++print *this.font_atlas.atlas_texture 
+$2 = <incomplete type>
++exit
+Reading symbols from ./build/Edit...
++exit
+Reading symbols from ./build/Edit...
++break draw_ascii_key
+Breakpoint 1 at 0x3c4b: file /home/david/Programming/cpp_dev/AnotherEditor/src/App.cpp, line 74.
++run
+Starting program: /home/david/Programming/cpp_dev/AnotherEditor/build/Edit 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+[New Thread 0x7fffea1ff6c0 (LWP 53813)]
+[New Thread 0x7fffe99fe6c0 (LWP 53814)]
+[New Thread 0x7fffe91fd6c0 (LWP 53815)]
+[New Thread 0x7fffe89fc6c0 (LWP 53816)]
+[New Thread 0x7fffdbbff6c0 (LWP 53817)]
+[New Thread 0x7fffdb3fe6c0 (LWP 53818)]
+[New Thread 0x7fffdabfd6c0 (LWP 53819)]
+[New Thread 0x7fffda3fc6c0 (LWP 53820)]
+[New Thread 0x7fffd9bfb6c0 (LWP 53821)]
+[New Thread 0x7fffd93fa6c0 (LWP 53822)]
+[Thread 0x7fffd93fa6c0 (LWP 53822) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 53821) exited]
+[Thread 0x7fffda3fc6c0 (LWP 53820) exited]
+[New Thread 0x7fffda3fc6c0 (LWP 53823)]
+[New Thread 0x7fffd9bfb6c0 (LWP 53824)]
+[New Thread 0x7fffd93fa6c0 (LWP 53825)]
+
+Thread 1 "Edit" hit Breakpoint 1, Application::draw_ascii_key (this=0x7fffffffd7a0, key=100) at /home/david/Programming/cpp_dev/AnotherEditor/src/App.cpp:74
++print key
+$1 = 100
++print x addr this.font_atlas.atlas_texture 
+No symbol "x" in current context.
++x addr this.font_atlas.atlas_texture 
+No symbol "addr" in current context.
+Quit
++quit
+Not confirmed.
+Quit
++quit
+Not confirmed.
++x this.font_atlas.atlas_texture
+0x5555566f39b0:	0x16762004
++x *this.font_atlas.atlas_texture
+Value can't be converted to integer.
++n
++n
++n
++print &font_atlas[key]
+Could not find operator[].
++print *this.font_atlas[key]
+Could not find operator[].
++n
++n
+Application::run (this=0x7fffffffd7a0) at /home/david/Programming/cpp_dev/AnotherEditor/src/App.cpp:111
++n
++n
++n
++n
++n
++n
++n
++n
++n
++n
++n
++print *this
+$2 = {
+  running = true,
+  window = 0x5555555c0020,
+  renderer = 0x5555555c5d30,
+  font_atlas = {
+    font = 0x55555645c570,
+    font_loc = Python Exception <class 'gdb.error'>: There is no member named _M_p.
+,
+    total_width = 923,
+    max_height = 15,
+    atlas_surface = 0x555556718000,
+    atlas_texture = 0x5555566f39b0,
+    texture_atlas_info = {
+      x = 5,
+      y = 50,
+      w = 923,
+      h = 15
+    },
+    glyph_data = std::unordered_map with 95 elements = {
+      [126] = {
+        x = 912,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [125] = {
+        x = 905,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [124] = {
+        x = 898,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [123] = {
+        x = 891,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [122] = {
+        x = 881,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [121] = {
+        x = 871,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [120] = {
+        x = 862,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [119] = {
+        x = 849,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [118] = {
+        x = 839,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [117] = {
+        x = 829,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [116] = {
+        x = 822,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [115] = {
+        x = 813,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [114] = {
+        x = 805,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [113] = {
+        x = 795,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [112] = {
+        x = 785,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [111] = {
+        x = 775,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [110] = {
+        x = 765,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [109] = {
+        x = 752,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [108] = {
+        x = 746,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [107] = {
+        x = 736,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [106] = {
+        x = 729,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [105] = {
+        x = 723,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [104] = {
+        x = 713,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [103] = {
+        x = 703,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [102] = {
+        x = 695,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [101] = {
+        x = 685,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [100] = {
+        x = 675,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [99] = {
+        x = 665,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [98] = {
+        x = 655,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [97] = {
+        x = 645,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [96] = {
+        x = 636,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [95] = {
+        x = 626,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [94] = {
+        x = 617,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [93] = {
+        x = 610,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [92] = {
+        x = 603,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [91] = {
+        x = 596,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [90] = {
+        x = 585,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [89] = {
+        x = 574,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [88] = {
+        x = 563,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [87] = {
+        x = 548,
+        y = 0,
+        w = 12,
+        h = 15
+      },
+      [86] = {
+        x = 537,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [85] = {
+        x = 525,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [84] = {
+        x = 514,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [83] = {
+        x = 503,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [82] = {
+        x = 492,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [81] = {
+        x = 480,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [80] = {
+        x = 469,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [79] = {
+        x = 457,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [78] = {
+        x = 445,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [77] = {
+        x = 431,
+        y = 0,
+        w = 11,
+        h = 15
+      },
+      [76] = {
+        x = 421,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [75] = {
+        x = 410,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [74] = {
+        x = 400,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [73] = {
+        x = 394,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [72] = {
+        x = 382,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [71] = {
+        x = 370,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [70] = {
+        x = 360,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [69] = {
+        x = 350,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [68] = {
+        x = 338,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [67] = {
+        x = 326,
+        y = 0,
+        w = 9,
+        h = 15
+      },
+      [66] = {
+        x = 315,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [65] = {
+        x = 304,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [64] = {
+        x = 290,
+        y = 0,
+        w = 11,
+        h = 15
+      },
+      [63] = {
+        x = 281,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [62] = {
+        x = 270,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [61] = {
+        x = 259,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [60] = {
+        x = 248,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [59] = {
+        x = 242,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [58] = {
+        x = 236,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [57] = {
+        x = 226,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [56] = {
+        x = 216,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [55] = {
+        x = 206,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [54] = {
+        x = 196,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [53] = {
+        x = 186,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [52] = {
+        x = 175,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [51] = {
+        x = 164,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [50] = {
+        x = 154,
+        y = 0,
+        w = 7,
+        h = 15
+      },
+      [49] = {
+        x = 145,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [48] = {
+        x = 134,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [47] = {
+        x = 127,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [46] = {
+        x = 121,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [45] = {
+        x = 112,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [44] = {
+        x = 106,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [43] = {
+        x = 95,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [42] = {
+        x = 86,
+        y = 0,
+        w = 6,
+        h = 15
+      },
+      [41] = {
+        x = 79,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [40] = {
+        x = 72,
+        y = 0,
+        w = 4,
+        h = 15
+      },
+      [39] = {
+        x = 66,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [38] = {
+        x = 55,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [37] = {
+        x = 42,
+        y = 0,
+        w = 10,
+        h = 15
+      },
+      [36] = {
+        x = 31,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [35] = {
+        x = 20,
+        y = 0,
+        w = 8,
+        h = 15
+      },
+      [34] = {
+        x = 12,
+        y = 0,
+        w = 5,
+        h = 15
+      },
+      [33] = {
+        x = 6,
+        y = 0,
+        w = 3,
+        h = 15
+      },
+      [32] = {
+        x = 0,
+        y = 0,
+        w = 3,
+        h = 15
+      }
+    }
+  },
+  doc_surface = 0x5555563088c0,
+  doc_texture = 0x555556308bb0,
+  current_pos = {
+    x = 0,
+    y = 0,
+    w = 0,
+    h = 0
+  }
+}
++print *doc_surface 
+$3 = {
+  flags = 8,
+  format = SDL_PIXELFORMAT_ABGR8888,
+  w = 800,
+  h = 600,
+  pitch = 3200,
+  pixels = 0x7fffe8027020,
+  refcount = 1,
+  reserved = 0x7ffff7e45e28
+}
++print *doc_texture 
+$4 = <incomplete type>
++exit
+Reading symbols from ./build/Edit...
++exit
+Reading symbols from ./build/Edit...
+Quit
++exit
+Reading symbols from ./build/Edit...
++break init
+Breakpoint 1 at 0x3681: init. (2 locations)
++run
+Starting program: /home/david/Programming/cpp_dev/AnotherEditor/build/Edit 
+[Thread debugging using libthread_db enabled]
+Using host libthread_db library "/usr/lib64/libthread_db.so.1".
+
+Breakpoint 1.3, 0x00007ffff792de20 in std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*) () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E,
+which has no line number information.
+0x00007ffff78c9eb4 in std::ios_base_library_init() () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZSt21ios_base_library_initv,
+which has no line number information.
+
+Breakpoint 1.3, 0x00007ffff792de20 in std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*) () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E,
+which has no line number information.
+0x00007ffff78c9f1a in std::ios_base_library_init() () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZSt21ios_base_library_initv,
+which has no line number information.
+
+Breakpoint 1.3, 0x00007ffff792de20 in std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*) () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E,
+which has no line number information.
+0x00007ffff78c9f71 in std::ios_base_library_init() () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZSt21ios_base_library_initv,
+which has no line number information.
+
+Breakpoint 1.3, 0x00007ffff792de20 in std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*) () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZNSt9basic_iosIcSt11char_traitsIcEE4initEPSt15basic_streambufIcS1_E,
+which has no line number information.
+0x00007ffff78c9fc7 in std::ios_base_library_init() () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZSt21ios_base_library_initv,
+which has no line number information.
+
+Breakpoint 1.4, 0x00007ffff792e7a0 in std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*) () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZNSt9basic_iosIwSt11char_traitsIwEE4initEPSt15basic_streambufIwS1_E,
+which has no line number information.
+0x00007ffff78ca1d5 in std::ios_base_library_init() () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZSt21ios_base_library_initv,
+which has no line number information.
+
+Breakpoint 1.4, 0x00007ffff792e7a0 in std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*) () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZNSt9basic_iosIwSt11char_traitsIwEE4initEPSt15basic_streambufIwS1_E,
+which has no line number information.
+0x00007ffff78ca244 in std::ios_base_library_init() () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZSt21ios_base_library_initv,
+which has no line number information.
+
+Breakpoint 1.4, 0x00007ffff792e7a0 in std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*) () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZNSt9basic_iosIwSt11char_traitsIwEE4initEPSt15basic_streambufIwS1_E,
+which has no line number information.
+0x00007ffff78ca2a5 in std::ios_base_library_init() () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZSt21ios_base_library_initv,
+which has no line number information.
+
+Breakpoint 1.4, 0x00007ffff792e7a0 in std::basic_ios<wchar_t, std::char_traits<wchar_t> >::init(std::basic_streambuf<wchar_t, std::char_traits<wchar_t> >*) () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZNSt9basic_iosIwSt11char_traitsIwEE4initEPSt15basic_streambufIwS1_E,
+which has no line number information.
+0x00007ffff78ca304 in std::ios_base_library_init() () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Single stepping until exit from function _ZSt21ios_base_library_initv,
+which has no line number information.
+0x00007ffff78b20f4 in ?? () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++n
+Cannot find bounds of current function
++n
+Cannot find bounds of current function
++n
+Cannot find bounds of current function
++n
+Cannot find bounds of current function
++n
+Cannot find bounds of current function
++c
+Continuing.
+
+Breakpoint 1.1, Application::init (this=0x7fffffffd7a0) at /home/david/Programming/cpp_dev/AnotherEditor/src/App.cpp:45
++n
++n
++n
++n
+
+Breakpoint 1.32, 0x00007fffed8b2490 in llvm::StringMapImpl::init(unsigned int) () from /usr/lib/llvm/19/lib64/libLLVM.so.19.1
++n
+Single stepping until exit from function _ZN4llvm13StringMapImpl4initEj,
+which has no line number information.
+0x00007fffed7624d7 in ?? () from /usr/lib/llvm/19/lib64/libLLVM.so.19.1
++c
+Continuing.
+
+Breakpoint 1.75, 0x00007ffff792de20 in std::basic_ios<char, std::char_traits<char> >::init(std::basic_streambuf<char, std::char_traits<char> >*) () from /usr/lib/gcc/x86_64-pc-linux-gnu/14/libstdc++.so.6
++c
+Continuing.
+[New Thread 0x7fffea1ff6c0 (LWP 24575)]
+[New Thread 0x7fffe99fe6c0 (LWP 24576)]
+[New Thread 0x7fffe91fd6c0 (LWP 24577)]
+[New Thread 0x7fffe89fc6c0 (LWP 24578)]
+[New Thread 0x7fffdbbff6c0 (LWP 24579)]
+[New Thread 0x7fffdb3fe6c0 (LWP 24580)]
+[New Thread 0x7fffdabfd6c0 (LWP 24581)]
+[New Thread 0x7fffda3fc6c0 (LWP 24582)]
+[New Thread 0x7fffd9bfb6c0 (LWP 24583)]
+[New Thread 0x7fffd93fa6c0 (LWP 24584)]
+[Thread 0x7fffd93fa6c0 (LWP 24584) exited]
+[Thread 0x7fffd9bfb6c0 (LWP 24583) exited]
+[Thread 0x7fffda3fc6c0 (LWP 24582) exited]
+[New Thread 0x7fffda3fc6c0 (LWP 24585)]
+[New Thread 0x7fffd9bfb6c0 (LWP 24586)]
+[New Thread 0x7fffd93fa6c0 (LWP 24587)]
+
+Thread 1 "Edit" hit Breakpoint 1.2, FontAtlas::init (this=0x7fffffffd7c0, renderer=0x5555555c5d30, width=957, height=524) at /home/david/Programming/cpp_dev/AnotherEditor/src/App.cpp:172
++N
+Undefined command: "N".  Try "help".
++n
++n
++n
++n
++n
++n
++n
++n
++n
++n
++n
++n
++n
++n
++c
+Continuing.
+
+Thread 1 "Edit" hit Breakpoint 1.39, 0x00007fffeda84550 in llvm::CallInst::init(llvm::FunctionType*, llvm::Value*, llvm::ArrayRef<llvm::Value*>, llvm::ArrayRef<llvm::OperandBundleDefT<llvm::Value*> >, llvm::Twine const&) () from /usr/lib/llvm/19/lib64/libLLVM.so.19.1
++exit
