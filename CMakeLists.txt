@@ -16,7 +16,7 @@ project(
   LANGUAGES CXX)
 
 if(CMAKE_PROJECT_NAME STREQUAL PROJECT_NAME)
-  set(CMAKE_CXX_COMPILER "/usr/lib/llvm/19/bin/clang++")
+  set(CMAKE_CXX_COMPILER "/usr/lib/llvm/20/bin/clang++")
   set(CMAKE_CXX_STANDARD_REQUIRED ON)
   set(CMAKE_CXX_CLANG_TIDY "clang-tidy")
   set(CMAKE_CXX_EXTENSIONS OFF)
