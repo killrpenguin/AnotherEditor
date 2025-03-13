@@ -18,7 +18,7 @@
 namespace
 {
 
-const float FONT_SIZE{14.0F};
+const float FONT_SIZE{16.0F};
 const int WIDTH{800};
 const int HEIGHT{600};
 const SDL_Color FG_COLOR{.r = 255, .g = 255, .b = 255, .a = 255};
@@ -62,7 +62,7 @@ auto Application::init() -> void
     set_line_height();
 
     SDL_Log("[LOG]: Document texture created.");
-    SDL_Log("[LOG]: Application initialized");
+    SDL_Log("[LOG]: Application initialized.");
 }
 auto Application::render_ascii_key(const SDL_Keycode key) noexcept -> void
 {
@@ -193,7 +193,8 @@ auto FontAtlas::init(SDL_Renderer *renderer) -> void
 
     for (char letter{32}; letter < 127; ++letter)
     {
-        SDL_Surface *char_surface = TTF_RenderGlyph_LCD(font, letter, FG_COLOR, BG_COLOR);
+	  SDL_Surface *char_surface = TTF_RenderGlyph_LCD(font, letter, FG_COLOR, BG_COLOR);
+	  // 	  SDL_Surface *char_surface = TTF_RenderGlyph_Blended(font, letter, FG_COLOR);
         if (char_surface == nullptr)
         {
             SDL_Log("Failed to create text surface for: %c, \n %s", letter, SDL_GetError());
