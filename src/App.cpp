@@ -18,7 +18,7 @@
 namespace
 {
 
-const float FONT_SIZE{16.0F};
+const float FONT_SIZE{96.0F};
 const int WIDTH{800};
 const int HEIGHT{600};
 const SDL_Color FG_COLOR{.r = 255, .g = 255, .b = 255, .a = 255};
@@ -122,7 +122,7 @@ auto Application::run() -> void
             case SDL_EVENT_KEY_DOWN:
                 if (Application::is_ascii(event.key.key))
                 {
-                    render_ascii_key(event.key.key);
+                    render_ascii_key(SDL_GetKeyFromScancode(event.key.scancode, event.key.mod, false));
                 }
                 else
                 {
@@ -159,7 +159,6 @@ auto Application::parse_key(const SDL_Keycode key) noexcept -> void
     {
     case SDLK_ESCAPE:
         running = false;
-        save_image("image.bmp", doc_texture);
         break;
     case SDLK_RETURN:
         current_pos.x = 0;
@@ -169,6 +168,7 @@ auto Application::parse_key(const SDL_Keycode key) noexcept -> void
         break;
     }
 }
+
 /////////////////////////////////////////////////////////////////////////////////
 // FontAtlas
 /////////////////////////////////////////////////////////////////////////////////
@@ -193,8 +193,8 @@ auto FontAtlas::init(SDL_Renderer *renderer) -> void
 
     for (char letter{32}; letter < 127; ++letter)
     {
-	  SDL_Surface *char_surface = TTF_RenderGlyph_LCD(font, letter, FG_COLOR, BG_COLOR);
-	  // 	  SDL_Surface *char_surface = TTF_RenderGlyph_Blended(font, letter, FG_COLOR);
+	  //        SDL_Surface *char_surface = TTF_RenderGlyph_LCD(font, letter, FG_COLOR, BG_COLOR);
+		SDL_Surface *char_surface = TTF_RenderGlyph_Blended(font, letter, FG_COLOR);
         if (char_surface == nullptr)
         {
             SDL_Log("Failed to create text surface for: %c, \n %s", letter, SDL_GetError());
